@@ -31,4 +31,4 @@ for contest in contests:
 	payload = {"username": "ElectionReminder", "text": "I was asked to move to this channel by someone who hates fun", "icon_emoji": ":ghost:"}
 	break
 if text is not None:
-    requests.post(os.getenv(SLACK_TOKEN), json = payload)
+    requests.post(os.getenv("SLACK_TOKEN"), json = payload)
